@@ -1,0 +1,5 @@
+package-as: DBM-LogoutTimer
+enable-nolib-creation: no
+
+move-folders:
+  DBM-LogoutTimer/DBM-LogoutTimer: DBM-LogoutTimer
