@@ -10,5 +10,8 @@ ignore = {
 globals = {
 	-- DeadlyBossMods
 	"DBM",
-	"DBM_DISABLE_ZONE_DETECTION"
+	"DBM_DISABLE_ZONE_DETECTION",
+
+	-- WoW
+	"GetLocale"
 }
