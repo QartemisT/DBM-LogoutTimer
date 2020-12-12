@@ -15,5 +15,6 @@ globals = {
 	-- WoW
 	"C_Timer",
 	"FlashClientIcon",
-	"GetLocale"
+	"GetLocale",
+	"PlaySound"
 }
