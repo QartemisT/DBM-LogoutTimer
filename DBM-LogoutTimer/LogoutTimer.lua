@@ -10,7 +10,7 @@ local timer30, timer15
 
 local function showAlert()
 	FlashClientIcon()
-	PlaySound(8585)
+	PlaySound(8585, "Master")
 end
 
 function mod:CHAT_MSG_SYSTEM(msg)
