@@ -13,5 +13,7 @@ globals = {
 	"DBM_DISABLE_ZONE_DETECTION",
 
 	-- WoW
+	"C_Timer",
+	"FlashClientIcon",
 	"GetLocale"
 }
