@@ -4,8 +4,7 @@ exclude_files = {
 	".luacheckrc"
 }
 ignore = {
-	"212", -- Unused argument
-	"542", -- An empty if branch
+	"212/self" -- Unused argument
 }
 globals = {
 	-- DeadlyBossMods
