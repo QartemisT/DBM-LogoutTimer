@@ -5,7 +5,7 @@ mod:SetRevision("@file-date-integer@")
 mod:SetZone(DBM_DISABLE_ZONE_DETECTION)
 mod:RegisterEvents("CHAT_MSG_SYSTEM")
 
-local logoutTimer = mod:NewTimer(1500, "TimerLogout", "110310")
+local logoutTimer = mod:NewTimer(1500, "TimerLogout", "132212")
 local timer30, timer15
 
 local function showAlert()
