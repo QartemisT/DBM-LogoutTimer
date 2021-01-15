@@ -13,14 +13,24 @@ local function showAlert()
 	PlaySound(8585, "Master")
 end
 
+local function cancel()
+	logoutTimer:Stop()
+	timer30:Cancel()
+	timer15:Cancel()
+	mod:UnregisterShortTermEvents()
+end
+
 function mod:CHAT_MSG_SYSTEM(msg)
 	if msg == L.IdleMessage or msg:find(L.IdleMessage) then
 		logoutTimer:Start()
 		timer30 = C_Timer.NewTimer(1470, showAlert)
 		timer15 = C_Timer.NewTimer(1485, showAlert)
+		self:RegisterShortTermEvents("ZONE_CHANGED_NEW_AREA")
 	elseif msg == L.UnidleMessage or msg:find(L.UnidleMessage) then
-		logoutTimer:Stop()
-		timer30:Cancel()
-		timer15:Cancel()
+		cancel()
 	end
+end
+
+function mod:ZONE_CHANGED_NEW_AREA()
+	cancel()
 end
