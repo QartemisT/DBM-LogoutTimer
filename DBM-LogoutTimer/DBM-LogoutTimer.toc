@@ -15,6 +15,7 @@
 ## X-DBM-Mod-Name: LogoutTimer
 ## X-DBM-Mod-Sort: 1500
 ## X-Curse-Project-ID: 427013
+## X-Wago-ID: anKWe4NE
 ## Version: @project-version@
 
 localization.en.lua
