@@ -5,15 +5,15 @@ mod:SetRevision("@file-date-integer@")
 mod:SetZone(DBM_DISABLE_ZONE_DETECTION)
 mod:RegisterEvents("CHAT_MSG_SYSTEM")
 
-local logoutTimer = mod:NewTimer(1500, "TimerLogout", "132212")
-local timer30, timer15
-
-local function showAlert()
+local function ShowAlert()
 	FlashClientIcon()
 	PlaySound(8585, "Master")
 end
 
-local function cancel()
+local logoutTimer = mod:NewTimer(1500, "TimerLogout", "132212")
+local timer30, timer15 = C_Timer.NewTimer(1470, ShowAlert), C_Timer.NewTimer(1485, ShowAlert)
+
+local function Cancel()
 	logoutTimer:Stop()
 	timer30:Cancel()
 	timer15:Cancel()
@@ -23,14 +23,14 @@ end
 function mod:CHAT_MSG_SYSTEM(msg)
 	if msg == L.IdleMessage or msg:find(L.IdleMessage) then
 		logoutTimer:Start()
-		timer30 = C_Timer.NewTimer(1470, showAlert)
-		timer15 = C_Timer.NewTimer(1485, showAlert)
+		timer30:Start()
+		timer15:Start()
 		self:RegisterShortTermEvents("ZONE_CHANGED_NEW_AREA")
 	elseif msg == L.UnidleMessage or msg:find(L.UnidleMessage) then
-		cancel()
+		Cancel()
 	end
 end
 
 function mod:ZONE_CHANGED_NEW_AREA()
-	cancel()
+	Cancel()
 end
