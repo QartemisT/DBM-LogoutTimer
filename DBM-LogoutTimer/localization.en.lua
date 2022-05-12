@@ -1,4 +1,4 @@
-﻿local L = DBM:GetModLocalization("DBM-LogoutTimer")
+local L = DBM:GetModLocalization("DBM-LogoutTimer")
 
 L:SetGeneralLocalization({
 	name	= "Logout Timer"
@@ -6,6 +6,11 @@ L:SetGeneralLocalization({
 
 L:SetTimerLocalization({
 	TimerLogout	= "Logout: "
+})
+
+L:SetOptionLocalization({
+	FlashClientIcon	= "Flash client icon when about to logout.",
+	PlaySound		= "Play sound effect when about to logout."
 })
 
 L:SetMiscLocalization({
