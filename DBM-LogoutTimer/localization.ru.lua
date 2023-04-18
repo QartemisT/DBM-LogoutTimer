@@ -15,6 +15,6 @@ L:SetOptionLocalization({
 })
 
 L:SetMiscLocalization({
-	IdleMessage		= "Вы сейчас отошли: AFK",
+	IdleMessage		= "Вы сейчас отошли:",
 	UnidleMessage	= "Вы снова за ПК."
 })

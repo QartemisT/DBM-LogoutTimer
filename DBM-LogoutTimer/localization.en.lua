@@ -14,6 +14,6 @@ L:SetOptionLocalization({
 })
 
 L:SetMiscLocalization({
-	IdleMessage		= "You are now Away: AFK",
+	IdleMessage		= "You are now Away:",
 	UnidleMessage	= "You are no longer Away."
 })
