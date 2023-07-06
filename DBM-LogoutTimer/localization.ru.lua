@@ -1,5 +1,5 @@
 if GetLocale() ~= "ruRU" then return end
-local L = DBM:GetModLocalization("DBM-LogoutTimer")
+local L = DBM:GetModLocalization("LogoutTimerGeneral")
 
 L:SetGeneralLocalization({
 	name	= "Общие настройки"
