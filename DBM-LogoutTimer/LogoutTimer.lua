@@ -1,4 +1,4 @@
-local mod	= DBM:NewMod("DBM-LogoutTimer")
+local mod	= DBM:NewMod("LogoutTimerGeneral", "DBM-LogoutTimer")
 local L		= mod:GetLocalizedStrings()
 
 mod:SetRevision("@file-date-integer@")
