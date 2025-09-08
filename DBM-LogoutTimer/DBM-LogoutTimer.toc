@@ -6,7 +6,7 @@
 ## Interface-Classic: 11507
 ## Category: DBM
 ## Title: |cffffe00a<|r|cffff7d0aDBM Extra|r|cffffe00a>|r |cff69ccf0Logout Timer|r
-## Title-ruRU: |cffffe00a<|r|cffff7d0aDBM Extra|r|cffffe00a>|r |cff69ccf0Таймер выхода из системы|r
+## Title-ruRU: |cffffe00a<|r|cffff7d0aDBM Дополнение|r|cffffe00a>|r |cff69ccf0Таймер выхода из системы|r
 ## Author: QartemisT
 ## LoadOnDemand: 0
 ## RequiredDeps: DBM-Core
