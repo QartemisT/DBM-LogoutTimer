@@ -15,5 +15,6 @@ globals = {
 	"C_Timer",
 	"FlashClientIcon",
 	"GetLocale",
+	"issecretvalue",
 	"PlaySound"
 }
