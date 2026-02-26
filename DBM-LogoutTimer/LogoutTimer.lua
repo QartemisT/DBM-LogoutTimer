@@ -30,6 +30,10 @@ local function Cancel()
 end
 
 function mod:CHAT_MSG_SYSTEM(msg)
+	if issecretvalue and issecretvalue(msg) then -- Hello secrets my old friend
+		return
+	end
+
 	if msg == L.IdleMessage or msg:find(L.IdleMessage) then
 		Cancel()
 		logoutTimer:Start()
